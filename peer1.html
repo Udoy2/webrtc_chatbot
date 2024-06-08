@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application Connection 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="connection_portion">
+      <h1>Anser input textbox:</h1>
+      <textarea
+        name="answer"
+        id="answer"
+        cols="70"
+        rows="20"
+        placeholder="enter your answer"
+      ></textarea>
+      <br />
+      
+      <h2>Sda:</h2>
+      <textarea id="sda_part" cols="70" rows="20"></textarea>
+    <button id="send">Connect With Answer</button>
+      </div>
+    <div id="chat_portion" style="display: none;">
+      <p id="client_text">Message from client: <span id="client_message"></span></p>
+      <input type="text" name="message" id="message" />
+      <button id="send_message">Send message</button>
+    </div>
+  </body>
+  <script src="./js/peer1.js"></script>
+
+
+</html>

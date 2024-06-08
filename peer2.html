@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application Connection 2</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="connection_portion">
+      <h1>offer input textbox:</h1>
+      <textarea
+        name="offer"
+        id="offer"
+        cols="70"
+        rows="20"
+        placeholder="enter your offer"
+      ></textarea>
+      <br />
+      
+      <h2>sda:</h2>
+      <textarea name="sda_part" id="sda_part" cols="70" rows="20"></textarea>
+      <button id="send">Create Answer</button>
+    </div>
+
+    <div id="chat_portion" style="display: none;">
+        <h1 style="text-align: center;margin-bottom: 1rem;">Chat Bot</h1>
+        <p id="client_text">Message: <span id="client_message">No Message!</span></p>
+      <input type="text" name="message" id="message" />
+      <button id="send_message">Send message</button>
+    </div>
+  </body>
+  <script src="./js/peer2.js"></script>
+
+</html>
